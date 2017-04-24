@@ -1,0 +1,39 @@
+
+<style>
+body{
+	
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+#mainPlayBloc{
+	border: 2px solid blue;
+	text-align: center;
+}
+
+#timerBloc{
+	border: 2px solid green;
+	height: 80px;
+	font-size: 20px;
+}
+
+#questionBloc{
+	border: 2px solid orange;
+	height: 200px;
+	vertical-align: center;
+	font-size: 20px;
+}
+
+#restartBloc #resultsBloc{
+	border: 2px solid yellow;
+	height: 40px;
+	font-size: 20px;
+}
+
+</style>
