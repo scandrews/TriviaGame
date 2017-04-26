@@ -1,5 +1,9 @@
 # TriviaGame
 Homework 5 - Trivia Game
 
-This version cleans up the all code and adds to the style to present a better game.
-Still need to add the second timer to restart the game (currently have a button)
+This version adds the following:
+ - 3 second timer which automatically starts the next round.
+ - adds a round count which ends the game after 10 plays and asks the player if they'd like to play again
+
+ this version works for 2 games then starts behaving erraticly
+ very hard to find bug

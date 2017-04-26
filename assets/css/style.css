@@ -15,33 +15,26 @@ h2{
 }
 
 #mainPlayBloc{
-	border: 2px solid blue;
 	text-align: center;
 	background-color: Lavender;
 }
 
 #timerBloc{
-	border: 2px solid green;
 	height: 80px;
 	font-size: 20px;
 }
 
 #questionBloc{
-	border: 2px solid orange;
 	height: 200px;
 	vertical-align: center;
 	font-size: 20px;
 }
 
 #restartBloc #resultsBloc{
-	border: 2px solid yellow;
 	height: 40px;
 	font-size: 20px;
 }
 
 .answerplace{
-/*	  background opacity: .3; 
-	  z-index: -1;
-*/	background-color: rgb(0, 0, 0. 0.6);
-*//*	background opacity: 0.4;
+	background-color: rgb(0, 0, 0. 0.6);
 }
