@@ -5,9 +5,9 @@ $(document).ready(function() {
 	var questionsAndAnswers = [[
 			[1, "What was the 14th state in the United States?"],
 			[2, "Vermont"],
-			[3, "Rohde Island"],
+			[3, "Rhode Island"],
 			[3, "Georgia"],
-			[3, "Tennasee"],
+			[3, "Tennessee"],
 			[4, "assets/images/vermont.jpg"]
 		],
 		[
@@ -15,7 +15,7 @@ $(document).ready(function() {
 			[2, "South Florida"],
 			[3, "Texas"],
 			[3, "Georgia"],
-			[3, "Luisianna"],
+			[3, "Louisiana"],
 			[4, "assets/images/baby_alligator.jpg"]
 		],
 		[
@@ -81,10 +81,6 @@ $(document).ready(function() {
 	$("#questionBloc").append("<button class='button1 btn btn-default' value='1'>Start Game</button>");
 	$(".button1").on("click", startRound);
 
-	// function newGame(){
-	// 	startRound();
-	// }
-
 	// This section starts each round of the game
 	function startRound (){
 		time = 10;
@@ -94,7 +90,6 @@ $(document).ready(function() {
 
     function startTimer () {
    	    // Use setInterval to start the count, call function "count" every 1 second
-        // var convertedTime = timeConverter(time);
         // write the start time to the screen
 		$("#timerBloc").html("<div class='questionBloc'>You have " + time + " Seconds To Guess</div>");
         	intervalId = setInterval(count, 1000);
@@ -103,9 +98,10 @@ $(document).ready(function() {
     // This function decrements timer, converts to time, writes to screen and checks for zero time
     function count () {
    	    time--;
+
        	// update the screen to the new converted time
 		$("#timerBloc").html("<div class='timerBloc'>You have " + time + " Seconds To Guess</div>");
-       	if (time < 0){
+       	if (time <= 0){
        		clearInterval(intervalId);
        		losses++;
        		$("#questionBloc").html("<div>Sorry time is up</div>");
@@ -134,7 +130,6 @@ $(document).ready(function() {
 				questOrderTable[b] = c;
 			}
 		}
-
 		// This loop writes the 4 answers to the screen using the shuffled array
 		for(var i=0; i<(questOrderTable.length); i++){	
 			var e = questOrderTable[i];
@@ -170,10 +165,10 @@ $(document).ready(function() {
    		if (round >= 5){
    			console.log("Game Over");
 			$("#timerBloc").html("Game Over  ");
-			$("#timerBloc").append("<button class='answerplace btn btn-default' value=8>Play Again</button><p></p>");
-			$("#timerBloc").on("click", "button", function(){
+			$("#startAgainBloc").append("<button id='restartBtn' class='answerplace btn btn-default' value=8>Play Again</button><p></p>");
+			$("#restartBtn").on("click", function(){
 				console.log("we got the restart game click");
-				$("#resultsBloc").html("");
+				$("#startAgainBloc").html("");
 				wins = 0;
 				losses = 0;
 				whichQuestion = 0;
@@ -185,7 +180,6 @@ $(document).ready(function() {
 		}
 		else{
 			nextRoundTime = 3;
-        	// var convertedTime2 = timeConverter(timeTwo);
 			$("#timerBloc").html("Next round will start in " + nextRoundTime + " seconds");
     	   	intervalIdTwo = setInterval(countAgain, 1000);
 		}
