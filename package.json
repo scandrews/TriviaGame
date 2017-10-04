@@ -1,0 +1,23 @@
+{
+  "name": "triviagame",
+  "version": "1.0.0",
+  "description": "TriviaGame",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scandrews/TriviaGame.git"
+  },
+  "author": "Steven Andrews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scandrews/TriviaGame/issues"
+  },
+  "homepage": "https://github.com/scandrews/TriviaGame#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

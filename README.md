@@ -1,8 +1,22 @@
-# TriviaGame
-Homework 5 - Trivia Game
+#Homework 5 - Trivia Game
 
-This version adds the following:
- - 3 second timer which automatically starts the next round.
- - adds a round count which ends the game after 10 plays and asks the player if they'd like to play again
+Trivia game using timed rounds
 
-Fixed the bug that caused erratic behavour
+##Overview
+
+The Trivia game uses times to give the user 10 seconds to answer a question, afterwhich a 3 second timer will automatically start the next question.
+
+##Functionality
+
+This application is an exercize in using javascript, is implemented using Bootstrap and jquery
+A simple server module using Express was added to facilitate deployment on Heroku.  The original homework was front end only.
+
+##Technologies Used
+
+HTML, CSS, Bootstrap
+Javascript, JQuery
+NodeJS, Express
+
+##Author
+
+Steven Andrews
